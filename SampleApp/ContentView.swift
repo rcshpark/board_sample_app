@@ -1,24 +1,17 @@
-//
-//  ContentView.swift
-//  SampleApp
-//
-//  Created by 박상훈 on 2023/07/21.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var kakaoAuthVM : KakaoAuthVM = KakaoAuthVM()
+    let loginStatusInfo : (Bool) -> String = { isLoggedIn in
+        return isLoggedIn ? "Success" : "Fail"
+    }
     var body: some View {
-        TabView {
-            HomeView().tabItem{
-                Label("Home", systemImage: "person")
-                }
-            StoryView().tabItem{
-                Label("Story", systemImage: "book")
-            }
-            SettingView().tabItem{
-                Label("Setting", systemImage: "heart")
-            }
+        VStack(spacing: 20){
+            Text(loginStatusInfo(kakaoAuthVM.isLoggedIn))
+            Button("Login", action:{
+                kakaoAuthVM.handleKakaoLogin()
+            })
+            Button("Logout", action:{})
         }
     }
 }
