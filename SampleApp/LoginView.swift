@@ -7,7 +7,7 @@
 //    
 //    @UIApplicationDelegateAdaptor var appDelegate : MyAppDelegate
 //    // 1
-//    //    init() {
+
 //        //        Kakao SDK 초기화
 //    //        let kakaoAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
 //    //           KakaoSDK.initSDK(appKey: "NATIVE_APP_KEY")
