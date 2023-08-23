@@ -11,10 +11,11 @@ struct ContentView: View {
             NavigationView {
                 VStack(spacing: 20) {
                         Button("Login") {
+                            print(kakaoAuthVM.userModel.email ?? "")
                             kakaoAuthVM.handleKakaoLogin()
                     }
                     if kakaoAuthVM.isLoggedIn {
-                        NavigationLink(destination: DetailView(), isActive: $isActive) {
+                        NavigationLink(destination: DetailView(kakaoAuthVM: kakaoAuthVM), isActive: $isActive) {
                             EmptyView() // 비어있는 뷰를 사용해서 NavigationLink를 활성화
                         }
                     }

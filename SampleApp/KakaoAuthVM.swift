@@ -5,6 +5,7 @@ import KakaoSDKUser
 
 class KakaoAuthVM: ObservableObject{
     @Published var isLoggedIn : Bool = false
+    @Published var userModel : UserModel = UserModel()
     
     func getUserData(){
         UserApi.shared.me() {(user, error) in
@@ -13,12 +14,9 @@ class KakaoAuthVM: ObservableObject{
             }
             else {
                 print("me() success.")
-                print(self.isLoggedIn)
                 //do something
                 _ = user
-                let userModel = UserModel(email: user?.kakaoAccount?.email, name: user?.kakaoAccount?.name)
-                print(userModel.email!)
-                
+                self.userModel = UserModel(email: user?.kakaoAccount?.email, name: user?.kakaoAccount?.name)
             }
         }
     }

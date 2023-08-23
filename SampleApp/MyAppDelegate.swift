@@ -15,15 +15,12 @@ class MyAppDelegate: UIResponder, UIApplicationDelegate{
         let kakaoAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
         
         KakaoSDK.initSDK(appKey: kakaoAppKey as! String)
-        
-        print("KAKAO KEY = \(kakaoAppKey)")
         return true 
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
            if (AuthApi.isKakaoTalkLoginUrl(url)) {
                return AuthController.handleOpenUrl(url: url)
            }
-
            return false
        }
 }

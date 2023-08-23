@@ -1,11 +1,21 @@
 import SwiftUI
 
 struct DetailView: View {
-    @StateObject var kakaoAuthVM : KakaoAuthVM = KakaoAuthVM()
+    @ObservedObject var kakaoAuthVM : KakaoAuthVM
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack{
-            Text("로그인 성공")
+            HStack{
+                Spacer()
+            }
+            Text("\(kakaoAuthVM.userModel.email ?? "사용자 이름") 님 환영합니다.").padding(10)
+            Text("test").onTapGesture {
+                print("Text Button active")
+            }.padding(10)
+            Button("Btn",action: {
+                print("button active")
+            }).foregroundColor(Color.red)
+            Spacer()
         }.toolbar{
             Button("로그아웃"){
                 kakaoAuthVM.kakaoLogout()
@@ -13,11 +23,13 @@ struct DetailView: View {
             }
             }.padding()
             .navigationBarBackButtonHidden()
+            .background(Color.gray.edgesIgnoringSafeArea(.all))
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(kakaoAuthVM: KakaoAuthVM())
     }
 }
+
