@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  SampleApp
-//
-//  Created by 박상훈 on 2023/08/23.
-//
-
 import SwiftUI
 
 struct HomeView: View {
@@ -22,6 +15,7 @@ struct HomeView: View {
               }
             }
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {

@@ -17,13 +17,15 @@ struct DetailView: View {
             }).foregroundColor(Color.red)
             Spacer()
         }.toolbar{
-            Button("로그아웃"){
-                kakaoAuthVM.kakaoLogout()
-                self.presentationMode.wrappedValue.dismiss()
+            ToolbarItem(placement: .navigationBarTrailing){
+                Button{
+                  print("toolbar")
+                } label: {
+                    Image(systemName: "person.crop.circle")
+                }
             }
             }.padding()
             .navigationBarBackButtonHidden()
-            .background(Color.gray.edgesIgnoringSafeArea(.all))
     }
 }
 

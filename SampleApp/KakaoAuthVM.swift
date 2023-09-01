@@ -13,7 +13,6 @@ class KakaoAuthVM: ObservableObject{
                 print(error)
             }
             else {
-                print("me() success.")
                 //do something
                 _ = user
                 self.userModel = UserModel(email: user?.kakaoAccount?.email, name: user?.kakaoAccount?.name)

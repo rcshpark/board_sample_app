@@ -8,16 +8,26 @@ struct ContentView: View {
         return isLoggedIn ? "Success" : "Fail"
     }
     var body: some View {
-            NavigationView {
-                VStack(spacing: 20) {
-                        Button("Login") {
-                            print(kakaoAuthVM.userModel.email ?? "")
+            NavigationStack {
+                VStack(spacing: 15) {
+                    Image("todays_list_icon").resizable().aspectRatio(contentMode: .fill).frame(height: 300)
+                        Button {
                             kakaoAuthVM.handleKakaoLogin()
-                    }
-                    if kakaoAuthVM.isLoggedIn {
-                        NavigationLink(destination: DetailView(kakaoAuthVM: kakaoAuthVM), isActive: $isActive) {
-                            EmptyView() // 비어있는 뷰를 사용해서 NavigationLink를 활성화
+                        } label: {
+                            Image("kakao_login_medium_wide")
+                        }.navigationDestination(isPresented: $isActive){
+                            if kakaoAuthVM.isLoggedIn{
+                                DetailView(kakaoAuthVM: kakaoAuthVM)
+                            }
                         }
+                    Button {
+                    }label: {
+                        HStack{
+                            Image(systemName: "pencil").padding(.trailing, 80).padding(.leading)
+                            Text("이메일 로그인")
+                        }.font(.system(size: 15))
+                            .frame(width: 300,height: 45, alignment: .leading).foregroundColor(Color.black).background(.green)
+                            .cornerRadius(8)
                     }
                 }
                 .onReceive(kakaoAuthVM.$isLoggedIn, perform: { newValue in
@@ -28,6 +38,9 @@ struct ContentView: View {
             }
         }
     }
+
+// preview
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
