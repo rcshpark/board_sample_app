@@ -16,6 +16,7 @@
 		7ED122D12A91D36E000AE46F /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7ED122D02A91D36E000AE46F /* KakaoSDK */; };
 		7ED122D52A91DED7000AE46F /* MyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED122D42A91DED7000AE46F /* MyAppDelegate.swift */; };
 		7ED122D72A91E4E6000AE46F /* KakaoAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED122D62A91E4E6000AE46F /* KakaoAuthVM.swift */; };
+		7ED3C9A32AA6B68C00028E8C /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3C9A22AA6B68C00028E8C /* TodoModel.swift */; };
 		7EE7AED92A95E3BB005B0096 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE7AED82A95E3BB005B0096 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		7ED122D32A91DB8A000AE46F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		7ED122D42A91DED7000AE46F /* MyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDelegate.swift; sourceTree = "<group>"; };
 		7ED122D62A91E4E6000AE46F /* KakaoAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthVM.swift; sourceTree = "<group>"; };
+		7ED3C9A22AA6B68C00028E8C /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		7EE7AED82A95E3BB005B0096 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				7ED122D42A91DED7000AE46F /* MyAppDelegate.swift */,
 				7ED122D62A91E4E6000AE46F /* KakaoAuthVM.swift */,
 				7E26589D2A932C9600D20A69 /* UserModel.swift */,
+				7ED3C9A22AA6B68C00028E8C /* TodoModel.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				7E67BE1E2A6AC68600DE0299 /* ContentView.swift in Sources */,
 				7EE7AED92A95E3BB005B0096 /* HomeView.swift in Sources */,
 				7E2658A02A9330C100D20A69 /* DetailView.swift in Sources */,
+				7ED3C9A32AA6B68C00028E8C /* TodoModel.swift in Sources */,
 				7ED122D52A91DED7000AE46F /* MyAppDelegate.swift in Sources */,
 				7ED122D72A91E4E6000AE46F /* KakaoAuthVM.swift in Sources */,
 				7E26589E2A932C9600D20A69 /* UserModel.swift in Sources */,
