@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E26589E2A932C9600D20A69 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E26589D2A932C9600D20A69 /* UserModel.swift */; };
 		7E2658A02A9330C100D20A69 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E26589F2A9330C100D20A69 /* DetailView.swift */; };
+		7E4AB3A42AAFF24000944366 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AB3A32AAFF24000944366 /* WelcomeView.swift */; };
 		7E67BE1C2A6AC68600DE0299 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67BE1B2A6AC68600DE0299 /* SampleApp.swift */; };
 		7E67BE1E2A6AC68600DE0299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67BE1D2A6AC68600DE0299 /* ContentView.swift */; };
 		7E67BE202A6AC68600DE0299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E67BE1F2A6AC68600DE0299 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		7E26589D2A932C9600D20A69 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7E26589F2A9330C100D20A69 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7E4AB3A32AAFF24000944366 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7E67BE182A6AC68600DE0299 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E67BE1B2A6AC68600DE0299 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		7E67BE1D2A6AC68600DE0299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				7E67BE1B2A6AC68600DE0299 /* SampleApp.swift */,
 				7E67BE1D2A6AC68600DE0299 /* ContentView.swift */,
 				7E26589F2A9330C100D20A69 /* DetailView.swift */,
+				7E4AB3A32AAFF24000944366 /* WelcomeView.swift */,
 				7EE7AED82A95E3BB005B0096 /* HomeView.swift */,
 				7E67BE1F2A6AC68600DE0299 /* Assets.xcassets */,
 				7E67BE212A6AC68600DE0299 /* Preview Content */,
@@ -171,6 +174,7 @@
 				7EE7AED92A95E3BB005B0096 /* HomeView.swift in Sources */,
 				7E2658A02A9330C100D20A69 /* DetailView.swift in Sources */,
 				7ED3C9A32AA6B68C00028E8C /* TodoModel.swift in Sources */,
+				7E4AB3A42AAFF24000944366 /* WelcomeView.swift in Sources */,
 				7ED122D52A91DED7000AE46F /* MyAppDelegate.swift in Sources */,
 				7ED122D72A91E4E6000AE46F /* KakaoAuthVM.swift in Sources */,
 				7E26589E2A932C9600D20A69 /* UserModel.swift in Sources */,
